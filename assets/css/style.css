@@ -1,0 +1,258 @@
+:root {
+    --cor-rosa: #e05c83;
+    --cor-roxo: #795ee1;
+    --cor-verde: #c6e158;
+    --cor-azul: #7eecd0;
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+.row {
+    margin: 0;
+}
+
+.container nav {
+    padding: 10px;
+    font-size: 1.2rem;
+    background-color: #444;
+}
+
+.container .navbar-brand img {
+    width: 30px;
+}
+
+.container .logo {
+    margin-left: 10px;
+    font-size: 0.7em;
+    color: whitesmoke;
+}
+
+#navbar-links a{
+    padding: 0 20px;
+    font-weight: bolder;
+    color: white;
+    transition: .3s;
+}
+
+#navbar-links a:hover{
+    text-transform: uppercase;
+}
+
+#navbar-links a:first-child {
+    color: var(--cor-roxo);
+}
+
+#navbar-links a:nth-last-child(3) {
+    color: var(--cor-rosa);
+}
+
+#navbar-links a:nth-last-child(1) {
+    color: var(--cor-verde);
+}
+
+/*Slider*/
+.container-fluid {
+    padding: 0;
+}
+
+#mainSlider .carousel-inner, #mainSlider .carousel-item {
+    height: 60vh;
+}
+
+#mainSlider .carousel-caption {
+    position: absolute;
+    top: 300px;
+    color: black;
+}
+
+#mainSlider .carousel-main-title {
+    font-family: 'Staatliches', cursive;
+    font-weight: bolder;
+    font-size: 8rem;
+    line-height: 90px;
+    letter-spacing: 0.2rem;
+    position: relative;
+}
+
+.carousel-caption .carousel-sub-title {
+    font-family: 'Dancing Script', cursive;
+    text-transform: lowercase;
+    font-size: 5rem;
+    color: var(--cor-rosa);
+    position: relative;
+    top: -60px;
+    font-weight: bold;
+    text-shadow: 0.1em 0.1em 0.2em rgba(0, 0, 0, 0.555);
+}
+
+/*Quem Sou*/
+
+#quem-sou {  
+    background: url('/assets/image/fundo1.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;    
+}
+
+.container .col-12 {
+    margin-bottom: -45px;
+}
+
+.main-title {
+    font-family: 'Staatliches', cursive;
+    font-weight: bolder;
+    font-size: 4.5rem;
+    text-align: center;
+    position: relative;
+    padding-top: 30px;
+}
+
+.sub-title {
+    font-family: 'Dancing Script', cursive;
+    text-transform: lowercase;
+    text-align: center;
+    position: relative;
+    font-size: 2.8rem;
+    top: -50px;
+    font-weight: bold;
+    color: var(--cor-roxo);
+}
+
+.container p {
+    text-align: justify;
+    font-size: 1.8rem;
+}
+
+.container strong {
+    background-color: var(--cor-verde);
+}
+
+
+
+/*Serviços*/
+
+#services {
+    background: url('/assets/image/fundo2.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 0;
+}
+
+.service-sub {
+    margin-top: 30px;
+}
+
+.services-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.8rem;
+    font-weight: bolder;
+    color: black
+}
+
+#services .container i {
+    padding: 0 20px;
+    font-size: 36px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: var(--cor-roxo)
+}
+
+
+#services .container-box {
+    margin-bottom: 40px;
+    transition: 0.3s;
+}
+
+#services .container-box:hover > i {
+    color: var(--cor-rosa);
+} 
+
+#services .container-box:hover > h3 {
+    color: var(--cor-rosa);
+}
+
+/*Contatos*/
+
+#contatos {
+    background: url('/assets/image/fundo4.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding-top: 0;
+}
+
+.contact-box {
+    transition: .4s;
+    padding: 24px;
+}
+
+.container i {
+    font-size: 50px;
+    color: var(--cor-azul);
+    transition: .4s;
+}
+
+.container h4 {
+    font-size: 36px;
+    color: #444;
+}
+
+#contatos .container .contact-box > i:hover {
+    color: var(--cor-verde);
+}
+
+footer {
+    background-color: black;
+    color: whitesmoke;
+    text-align: center;
+}
+
+@media(max-width: 768px) {
+    /*Geral*/
+    .container {
+        padding: 0;
+    }
+
+       /*Slider*/
+    #mainSlider .carousel-inner, #mainSlider .carousel-item{
+        height: auto;
+        
+    }
+    #mainSlider .carousel-inner .carousel-item .carousel-caption .carousel-main-title {
+        font-size: 5em;
+        line-height: 50px;
+        position: relative;
+        top: -70px;
+    }
+    #mainSlider .carousel-inner .carousel-item .carousel-caption .carousel-sub-title {
+        font-size: 3em;
+        position: relative;
+        top: -100px;
+    }
+
+    /*quem sou*/
+
+    #quem-sou {
+        padding-top: 0;
+    }
+    
+    #quem-sou .main-title {
+        padding: 0;
+        font-size: 4rem;
+    }
+
+    #quem-sou .container p {
+        font-size: 1.5em;
+    }
+
+    /*Serviços*/
+}
