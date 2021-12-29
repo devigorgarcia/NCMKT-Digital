@@ -70,7 +70,7 @@ body {
 
 #mainSlider .carousel-caption {
     position: absolute;
-    top: 300px;
+    top: 130px;
     color: black;
 }
 
@@ -97,7 +97,7 @@ body {
 /*Quem Sou*/
 
 #quem-sou {  
-    background-image: url("/assets/image/fundo1.jpeg");
+    background-image: url(../image/fundo1.jpeg);
     background-size: cover;
     background-repeat: no-repeat;    
 }
@@ -140,7 +140,7 @@ body {
 /*Serviços*/
 
 #services {
-    background: url('/assets/image/fundo2.jpeg');
+    background: url(../image/fundo2.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
@@ -183,7 +183,7 @@ body {
 /*Contatos*/
 
 #contatos {
-    background: url('/assets/image/fundo4.jpeg');
+    background: url(../image/fundo4.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
@@ -231,12 +231,12 @@ footer {
         font-size: 5em;
         line-height: 50px;
         position: relative;
-        top: -70px;
+        top: 
     }
     #mainSlider .carousel-inner .carousel-item .carousel-caption .carousel-sub-title {
         font-size: 3em;
         position: relative;
-        top: -100px;
+        top: -30px;
     }
 
     /*quem sou*/
@@ -255,4 +255,65 @@ footer {
     }
 
     /*Serviços*/
+}
+
+@media(max-width: 425px) {
+    /*Geral*/
+    .container {
+        padding: 0;
+    }
+
+       /*Slider*/
+    #mainSlider .carousel-inner, #mainSlider .carousel-item{
+        height: auto;
+        
+    }
+    #mainSlider .carousel-inner .carousel-item .carousel-caption .carousel-main-title {
+        font-size: 4em;
+        line-height: 38px;
+        position: relative;
+        top: -20px;
+    }
+    #mainSlider .carousel-inner .carousel-item .carousel-caption .carousel-sub-title {
+        font-size: 1.9em;
+        position: relative;
+        top: -40px;
+    }
+
+    /*quem sou*/
+
+    #quem-sou {
+        padding-top: 0;
+    }
+    
+    #quem-sou .main-title {
+        padding: 0;
+        font-size: 3rem;
+    }
+
+    #quem-sou .sub-title {
+        font-size: 2.0rem;
+        position: relative;
+        top: -40px;
+    }
+
+    #quem-sou .container p {
+        font-size: 1.3em;
+    }
+
+    /*Serviços*/
+
+    #services .main-title {
+        font-size: 3rem;
+    }
+
+    #services .sub-title {
+        font-size: 2rem;
+    }
+
+    #services .container-box {
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid black;
+    }
 }
