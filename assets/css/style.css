@@ -97,7 +97,7 @@ body {
 /*Quem Sou*/
 
 #quem-sou {  
-    background: url('/assets/image/fundo1.jpeg');
+    background-image: url("/assets/image/fundo1.jpeg");
     background-size: cover;
     background-repeat: no-repeat;    
 }
